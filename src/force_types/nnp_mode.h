@@ -38,6 +38,7 @@
 #include <system.h>
 #include <Cabana_NeighborList.hpp>
 #include <Cabana_Slice.hpp>
+//#include <Cabana_Parallel.hpp>
 #include <types.h>
 
 #define MAX_SF 30
