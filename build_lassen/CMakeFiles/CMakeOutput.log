@@ -1,0 +1,493 @@
+The system is: Linux - 4.14.0-115.10.1.1chaos.ch6a.ppc64le - ppc64le
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper 
+Build flags: -std=c++11
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/3.9.2/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_b2f2e/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_b2f2e.dir/build.make CMakeFiles/cmTC_b2f2e.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b2f2e.dir/testCXXCompiler.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -o CMakeFiles/cmTC_b2f2e.dir/testCXXCompiler.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b2f2e
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2f2e.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_b2f2e.dir/testCXXCompiler.cxx.o  -o cmTC_b2f2e 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_2b0c5/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_2b0c5.dir/build.make CMakeFiles/cmTC_2b0c5.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -o CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.9.2/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_2b0c5
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b0c5.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11    -v CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2b0c5 
+Reading specs from /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/specs
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-4.9.3/gnu/bin/g++
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /builddir/build/BUILD/gccspack/spack/var/spack/stage/gcc-4.9.3-wrtcv2vmjcdbqawlku4lfzmeploo5uuw/gcc-4.9.3/configure --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --libdir=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --disable-multilib --enable-languages=fortran,c,java,objc,c++ --with-mpc=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpc-1.0.3-omkclnkbg5sttyjbmiyaw2lnnhkyc5ul --with-mpfr=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpfr-3.1.5-rd6q42t6n2ndi3k6lmyoijwesiay5pwr --with-gmp=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/gmp-6.1.0-gfzbrglxig67w22ejob64amrkv7y6x53 --enable-lto --with-quad
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc'
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/cc1plus -quiet -v -I . -I /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=243 /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/crt/link.stub -quiet -dumpbase link.stub -auxbase-strip /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o -std=c++11 -version -o /var/tmp/desai7/ccXBpq1A.s
+GNU C++ (GCC) version 4.9.3 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 6.1.0, MPFR version 3.1.5, MPC version 1.0.3
+warning: GMP header version 6.1.0 differs from library version 6.0.0.
+warning: MPFR header version 3.1.5 differs from library version 3.1.1.
+warning: MPC header version 1.0.3 differs from library version 1.0.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../powerpc64le-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ .
+ /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/powerpc64le-unknown-linux-gnu
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/include
+ /usr/local/include
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/include
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/include-fixed
+ /usr/include
+End of search list.
+GNU C++ (GCC) version 4.9.3 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 6.1.0, MPFR version 3.1.5, MPC version 1.0.3
+warning: GMP header version 6.1.0 differs from library version 6.0.0.
+warning: MPFR header version 3.1.5 differs from library version 3.1.1.
+warning: MPC header version 1.0.3 differs from library version 1.0.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7ddf6164d8a7fc8bb2e879f349caa044
+COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc'
+ as -v -I . -I /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include -a64 -mppc64 -many -mlittle -o /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o /var/tmp/desai7/ccXBpq1A.s
+GNU assembler version 2.27 (ppc64le-redhat-linux) using BFD version version 2.27-34.base.el7
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc'
+Reading specs from /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/specs
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-4.9.3/gnu/bin/g++
+COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/lto-wrapper
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /builddir/build/BUILD/gccspack/spack/var/spack/stage/gcc-4.9.3-wrtcv2vmjcdbqawlku4lfzmeploo5uuw/gcc-4.9.3/configure --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --libdir=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --disable-multilib --enable-languages=fortran,c,java,objc,c++ --with-mpc=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpc-1.0.3-omkclnkbg5sttyjbmiyaw2lnnhkyc5ul --with-mpfr=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpfr-3.1.5-rd6q42t6n2ndi3k6lmyoijwesiay5pwr --with-gmp=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/gmp-6.1.0-gfzbrglxig67w22ejob64amrkv7y6x53 --enable-lto --with-quad
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2b0c5' '-std=c++11' '-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs' '-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib' '-shared-libgcc'
+ /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/collect2 -plugin /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/var/tmp/desai7/cccjcRpF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --eh-frame-hdr -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_2b0c5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs -L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../.. --start-group /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o -rpath=/usr/tce/packages/cuda/cuda-10.1.243/nvidia/lib64:/usr/tce/packages/cuda/cuda-10.1.243 -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
+GNU ld version 2.27-34.base.el7
+  Supported emulations:
+   elf64lppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32_spu
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_2b0c5/fast"]
+  ignore line: [/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_2b0c5.dir/build.make CMakeFiles/cmTC_2b0c5.dir/build]
+  ignore line: [gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -o CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.9.2/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_2b0c5]
+  ignore line: [/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b0c5.dir/link.txt --verbose=1]
+  ignore line: [/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11    -v CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2b0c5 ]
+  ignore line: [Reading specs from /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/specs]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-4.9.3/gnu/bin/g++]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /builddir/build/BUILD/gccspack/spack/var/spack/stage/gcc-4.9.3-wrtcv2vmjcdbqawlku4lfzmeploo5uuw/gcc-4.9.3/configure --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --libdir=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --disable-multilib --enable-languages=fortran,c,java,objc,c++ --with-mpc=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpc-1.0.3-omkclnkbg5sttyjbmiyaw2lnnhkyc5ul --with-mpfr=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpfr-3.1.5-rd6q42t6n2ndi3k6lmyoijwesiay5pwr --with-gmp=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/gmp-6.1.0-gfzbrglxig67w22ejob64amrkv7y6x53 --enable-lto --with-quad]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc']
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/cc1plus -quiet -v -I . -I /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=1 -D __CUDACC_VER_BUILD__=243 /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/crt/link.stub -quiet -dumpbase link.stub -auxbase-strip /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o -std=c++11 -version -o /var/tmp/desai7/ccXBpq1A.s]
+  ignore line: [GNU C++ (GCC) version 4.9.3 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3, GMP version 6.1.0, MPFR version 3.1.5, MPC version 1.0.3]
+  ignore line: [warning: GMP header version 6.1.0 differs from library version 6.0.0.]
+  ignore line: [warning: MPFR header version 3.1.5 differs from library version 3.1.1.]
+  ignore line: [warning: MPC header version 1.0.3 differs from library version 1.0.1.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ .]
+  ignore line: [ /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/powerpc64le-unknown-linux-gnu]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++ (GCC) version 4.9.3 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3, GMP version 6.1.0, MPFR version 3.1.5, MPC version 1.0.3]
+  ignore line: [warning: GMP header version 6.1.0 differs from library version 6.0.0.]
+  ignore line: [warning: MPFR header version 3.1.5 differs from library version 3.1.1.]
+  ignore line: [warning: MPC header version 1.0.3 differs from library version 1.0.1.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 7ddf6164d8a7fc8bb2e879f349caa044]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc']
+  ignore line: [ as -v -I . -I /usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include -a64 -mppc64 -many -mlittle -o /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o /var/tmp/desai7/ccXBpq1A.s]
+  ignore line: [GNU assembler version 2.27 (ppc64le-redhat-linux) using BFD version version 2.27-34.base.el7]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-c' '-D' 'FATBINFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-3_cmTC_2b0c5_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/var/tmp/desai7/tmpxft_00004a86_00000000-2_cmTC_2b0c5_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-v' '-I' '/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=1' '-D' '__CUDACC_VER_BUILD__=243' '-o' '/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o' '-shared-libgcc']
+  ignore line: [Reading specs from /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/specs]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-4.9.3/gnu/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/lto-wrapper]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /builddir/build/BUILD/gccspack/spack/var/spack/stage/gcc-4.9.3-wrtcv2vmjcdbqawlku4lfzmeploo5uuw/gcc-4.9.3/configure --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --prefix=/usr/tce/packages/gcc/gcc-4.9.3/gnu --libdir=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --disable-multilib --enable-languages=fortran,c,java,objc,c++ --with-mpc=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpc-1.0.3-omkclnkbg5sttyjbmiyaw2lnnhkyc5ul --with-mpfr=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/mpfr-3.1.5-rd6q42t6n2ndi3k6lmyoijwesiay5pwr --with-gmp=/builddir/build/BUILD/gccspack/spack/opt/spack/linux-rhel7-ppc64le/gcc-4.8.5/gmp-6.1.0-gfzbrglxig67w22ejob64amrkv7y6x53 --enable-lto --with-quad]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2b0c5' '-std=c++11' '-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs' '-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib' '-shared-libgcc']
+  link line: [ /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/collect2 -plugin /usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/var/tmp/desai7/cccjcRpF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64 --eh-frame-hdr -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_2b0c5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs -L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../.. --start-group /var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o -rpath=/usr/tce/packages/cuda/cuda-10.1.243/nvidia/lib64:/usr/tce/packages/cuda/cuda-10.1.243 -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/tce/packages/gcc/gcc-4.9.3/gnu/libexec/gcc/powerpc64le-unknown-linux-gnu/4.9.3/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/tmp/desai7/cccjcRpF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib:/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2b0c5] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtbegin.o] ==> ignore
+    arg [-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> dir [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs]
+    arg [-L/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib] ==> dir [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib]
+    arg [-L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3] ==> dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3]
+    arg [-L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64] ==> dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../..] ==> dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../..]
+    arg [--start-group] ==> ignore
+    arg [/var/tmp/desai7/tmpxft_00004a86_00000000-5_cmTC_2b0c5_dlink.o] ==> ignore
+    arg [CMakeFiles/cmTC_2b0c5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath=/usr/tce/packages/cuda/cuda-10.1.243/nvidia/lib64:/usr/tce/packages/cuda/cuda-10.1.243] ==> ignore
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [--end-group] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/targets/ppc64le-linux/lib/stubs]
+  collapse library dir [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/bin/../targets/ppc64le-linux/lib] ==> [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/targets/ppc64le-linux/lib]
+  collapse library dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3] ==> [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3]
+  collapse library dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../../../lib64] ==> [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3/../../..] ==> [/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/tce/packages/cuda/cuda-10.1.243/nvidia/targets/ppc64le-linux/lib/stubs;/usr/tce/packages/cuda/cuda-10.1.243/nvidia/targets/ppc64le-linux/lib;/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/gcc/powerpc64le-unknown-linux-gnu/4.9.3;/usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64;/lib64;/usr/lib64]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_20452/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_20452.dir/build.make CMakeFiles/cmTC_20452.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20452.dir/feature_tests.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -std=c++14 -o CMakeFiles/cmTC_20452.dir/feature_tests.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/feature_tests.cxx
+nvcc_wrapper - *warning* you have set multiple optimization flags (-std=c++1* or --std=c++1*), only the first is used because nvcc can only accept a single std setting
+Linking CXX executable cmTC_20452
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20452.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_20452.dir/feature_tests.cxx.o  -o cmTC_20452 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_d6fa9/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_d6fa9.dir/build.make CMakeFiles/cmTC_d6fa9.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d6fa9.dir/feature_tests.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -std=c++11 -o CMakeFiles/cmTC_d6fa9.dir/feature_tests.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/feature_tests.cxx
+nvcc_wrapper - *warning* you have set multiple optimization flags (-std=c++1* or --std=c++1*), only the first is used because nvcc can only accept a single std setting
+Linking CXX executable cmTC_d6fa9
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6fa9.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_d6fa9.dir/feature_tests.cxx.o  -o cmTC_d6fa9 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_93dab/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_93dab.dir/build.make CMakeFiles/cmTC_93dab.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_93dab.dir/feature_tests.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -std=c++98 -o CMakeFiles/cmTC_93dab.dir/feature_tests.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_93dab
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93dab.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_93dab.dir/feature_tests.cxx.o  -o cmTC_93dab 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_40318/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_40318.dir/build.make CMakeFiles/cmTC_40318.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40318.dir/CheckIncludeFile.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -std=gnu++11 -o CMakeFiles/cmTC_40318.dir/CheckIncludeFile.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_40318
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40318.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_40318.dir/CheckIncludeFile.cxx.o  -o cmTC_40318 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/tcetmp/bin/gmake" "cmTC_a9846/fast"
+/usr/tcetmp/bin/gmake -f CMakeFiles/cmTC_a9846.dir/build.make CMakeFiles/cmTC_a9846.dir/build
+gmake[1]: Entering directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9846.dir/CheckSymbolExists.cxx.o
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper    -std=c++11    -std=gnu++11 -o CMakeFiles/cmTC_a9846.dir/CheckSymbolExists.cxx.o -c /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_a9846
+/usr/tce/packages/cmake/cmake-3.9.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9846.dir/link.txt --verbose=1
+/g/g90/desai7/Codes/kokkos/bin/nvcc_wrapper  -std=c++11     CMakeFiles/cmTC_a9846.dir/CheckSymbolExists.cxx.o  -o cmTC_a9846 
+gmake[1]: Leaving directory '/g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp'
+
+File /g/g90/desai7/Codes/CabanaMD/build_lassen/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
