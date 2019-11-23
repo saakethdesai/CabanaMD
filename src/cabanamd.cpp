@@ -363,20 +363,12 @@ void CabanaMD::check_correctness(int step) {
     printf("Mismatch in current and reference atom counts\n");
   }
 
-  AoSoA xvf_ref( "ref", n );
-  auto xref = Cabana::slice<Positions>(xvf_ref);
-  auto vref = Cabana::slice<Velocities>(xvf_ref);
-  auto fref = Cabana::slice<Forces>(xvf_ref);
-  auto idref = Cabana::slice<IDs>(xvf_ref);
-  auto typeref = Cabana::slice<Types>(xvf_ref);
-  auto qref = Cabana::slice<Charges>(xvf_ref);
-  
-  t_AoSoA_x aosoa_x_ref( n );
-  t_AoSoA_x aosoa_v_ref( n );
-  t_AoSoA_x aosoa_f_ref( n );
-  t_AoSoA_int aosoa_type_ref( n );
-  t_AoSoA_int aosoa_id_ref( n );
-  t_AoSoA_fl aosoa_q_ref( n );
+  t_AoSoA_x aosoa_x_ref( "xref", n );
+  t_AoSoA_x aosoa_v_ref( "vref", n );
+  t_AoSoA_x aosoa_f_ref( "fref", n );
+  t_AoSoA_int aosoa_type_ref( "typeref", n );
+  t_AoSoA_int aosoa_id_ref( "idref", n );
+  t_AoSoA_fl aosoa_q_ref( "qref", n );
   auto xref = Cabana::slice<0>(aosoa_x_ref);
   auto vref = Cabana::slice<0>(aosoa_v_ref);
   auto fref = Cabana::slice<0>(aosoa_f_ref);

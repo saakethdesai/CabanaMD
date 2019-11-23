@@ -117,7 +117,10 @@ public:
   
   /// AoSoAs of use to compute energy and force
   /// Allow storage of G, dEdG and energy (per atom properties)
-  AoSoA_NNP nnp_data;
+  //AoSoA_NNP nnp_data;
+  t_AoSoA_NNP_G aosoa_G;
+  t_AoSoA_NNP_G aosoa_dEdG;
+  t_AoSoA_fl aosoa_energy;
   //numSymmetryFunctionsPerElement (per type property)
   t_mass d_numSFperElem;
   h_t_mass h_numSFperElem, atomicEnergyOffset;

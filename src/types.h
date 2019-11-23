@@ -55,7 +55,7 @@
 #include<Cabana_VerletList.hpp>
 #include<CabanaCore_config.hpp>
 
-#define VECLEN 16
+#define VECLEN 1 
 #define MAX_SF 30 //TODO: hardcoded 
 
 // Module Types etc
@@ -115,10 +115,11 @@ enum TypeNames { Positions = 0, Velocities = 1, Forces = 2,
                  Types = 3, IDs = 4, Charges = 5 };
 enum NNPNames { G = 0, dEdG = 1, energy = 2};
 enum ScalingType { ST_NONE, ST_SCALE, ST_CENTER, ST_SCALECENTER, ST_SCALESIGMA };
-=======
 using t_tuple_x = Cabana::MemberTypes<T_FLOAT[3]>;
 using t_tuple_int = Cabana::MemberTypes<T_INT>;
 using t_tuple_fl = Cabana::MemberTypes<T_FLOAT>;
+
+using t_tuple_NNP_G = Cabana::MemberTypes<T_FLOAT[MAX_SF]>;
 
 #ifdef CabanaMD_ENABLE_Cuda
 using MemorySpace = Kokkos::CudaUVMSpace;
@@ -155,10 +156,12 @@ using t_bias = Kokkos::View<T_FLOAT***,array_layout,Kokkos::HostSpace>;
 using d_t_weights = Kokkos::View<T_FLOAT****>;
 using t_weights = Kokkos::View<T_FLOAT****,array_layout,Kokkos::HostSpace>;
 using d_t_NN = Kokkos::View<T_FLOAT***>;
-=======
 using t_AoSoA_x = Cabana::AoSoA<t_tuple_x,DeviceType,VECLEN>;
 using t_AoSoA_int = Cabana::AoSoA<t_tuple_int,DeviceType,VECLEN>;
 using t_AoSoA_fl = Cabana::AoSoA<t_tuple_fl,DeviceType,VECLEN>;
+
+//split NNP AoSoA
+using t_AoSoA_NNP_G = Cabana::AoSoA<t_tuple_NNP_G,DeviceType,VECLEN>;
 
 using t_particle_x = Cabana::Tuple<t_tuple_x>;
 using t_particle_int = Cabana::Tuple<t_tuple_int>;

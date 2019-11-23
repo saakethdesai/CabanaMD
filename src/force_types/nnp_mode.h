@@ -350,13 +350,13 @@ public:
     double scale(int attype, double value, int k, d_t_SFscaling SFscaling);
 
     template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-    void calculateForces(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list);
+    void calculateForces(System *s, t_AoSoA_NNP_G aosoa_dEdG, t_neighbor neigh_list);
 
     template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-    void calculateAtomicNeuralNetworks(System* s, AoSoA_NNP nnp_data, t_mass numSFperElem);
+    void calculateAtomicNeuralNetworks(System* s, t_AoSoA_NNP_G aosoa_G, t_AoSoA_NNP_G aosoa_dEdG, t_AoSoA_fl aosoa_energy, t_mass numSFperElem);
 
     template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-    void calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list);
+    void calculateSymmetryFunctionGroups(System *s, t_AoSoA_NNP_G aosoa_G, t_neighbor neigh_list);
 
     /// Global log file.
     nnp::Log        log;

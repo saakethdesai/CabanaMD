@@ -44,13 +44,17 @@ using namespace std;
 using namespace nnpCbn;
 
 template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-void Mode::calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list)
+void Mode::calculateSymmetryFunctionGroups(System *s, t_AoSoA_NNP_G aosoa_G, t_neighbor neigh_list)
 {
-    auto id = Cabana::slice<IDs>(s->xvf);
-    auto type = Cabana::slice<Types>(s->xvf);
-    auto x = Cabana::slice<Positions>(s->xvf);
-    typename AoSoA_NNP::member_slice_type<NNPNames::G>::atomic_access_slice G;
-    G = Cabana::slice<NNPNames::G>(nnp_data);
+    auto id = Cabana::slice<0>(s->aosoa_id);
+    auto type = Cabana::slice<0>(s->aosoa_type);
+    auto x = Cabana::slice<0>(s->aosoa_x);
+
+    //auto id = s->aosoa_id; //Cabana::slice<IDs>(s->xvf);
+    //auto type = s->aosoa_type; // Cabana::slice<Types>(s->xvf);
+    //auto x = s->aosoa_x; //Cabana::slice<Positions>(s->xvf);
+    typename t_AoSoA_NNP_G::member_slice_type<0>::atomic_access_slice G;
+    G = Cabana::slice<0>(aosoa_G);
     
     Cabana::deep_copy(G,0.0); 
 
@@ -58,6 +62,7 @@ void Mode::calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neig
     t_neigh_parallel neigh_op_tag;
     t_angle_parallel angle_op_tag;
 
+    Kokkos::timer timer;
     auto calc_radial_symm_op = KOKKOS_LAMBDA (const int i, const int j)
     {
         int attype = type(i);
@@ -100,6 +105,8 @@ void Mode::calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neig
                                   neigh_op_tag,
                                   "Mode::calculateRadialSymmetryFunctionGroups");
     Kokkos::fence();
+    double time1 = timer.seconds();
+    timer.reset();
 
     auto calc_angular_symm_op = KOKKOS_LAMBDA (const int i, const int j, const int k)
     {
@@ -196,6 +203,7 @@ void Mode::calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neig
                                   neigh_op_tag, angle_op_tag,
                                   "Mode::calculateAngularSymmetryFunctionGroups");
     Kokkos::fence();
+    double time2 = timer.seconds();
 
     auto scale_symm_op = KOKKOS_LAMBDA (const int i)
     {
@@ -226,22 +234,26 @@ void Mode::calculateSymmetryFunctionGroups(System *s, AoSoA_NNP nnp_data, t_neig
     Kokkos::parallel_for("Mode::scaleSymmetryFunctionGroups", policy,
                          scale_symm_op);
     Kokkos::fence();
-
+    double time3 = timer.seconds();
+    printf("TIME CalculateSymFuncs: %f %f %f\n", time1, time2, time3);
 } 
 
 template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-void Mode::calculateAtomicNeuralNetworks(System* s, AoSoA_NNP nnp_data, t_mass numSFperElem)
+void Mode::calculateAtomicNeuralNetworks(System* s, t_AoSoA_NNP_G aosoa_G, t_AoSoA_NNP_G aosoa_dEdG, t_AoSoA_fl aosoa_energy, t_mass numSFperElem)
 {
-    auto type = Cabana::slice<Types>(s->xvf);
-    auto G = Cabana::slice<NNPNames::G>(nnp_data);
-    auto dEdG = Cabana::slice<NNPNames::dEdG>(nnp_data);
-    auto energy = Cabana::slice<NNPNames::energy>(nnp_data);
+    auto x = Cabana::slice<0>(s->aosoa_x);
+    auto type = Cabana::slice<0>(s->aosoa_type);
+    //auto type = s->aosoa_type;// Cabana::slice<Types>(s->xvf);
+    auto G = Cabana::slice<0>(aosoa_G);
+    auto dEdG = Cabana::slice<0>(aosoa_dEdG);
+    auto energy = Cabana::slice<0>(aosoa_energy);
 
     NN = d_t_NN("Mode::NN",s->N,numLayers,maxNeurons);
     dfdx = d_t_NN("Mode::dfdx",s->N,numLayers,maxNeurons);
     inner = d_t_NN("Mode::inner",s->N,numHiddenLayers,maxNeurons);
     outer = d_t_NN("Mode::outer",s->N,numHiddenLayers,maxNeurons);
     
+    Kokkos::timer timer;
     auto calc_nn_op = KOKKOS_LAMBDA (const int atomindex)
     {
         int attype = type(atomindex);
@@ -304,19 +316,28 @@ void Mode::calculateAtomicNeuralNetworks(System* s, AoSoA_NNP nnp_data, t_mass n
     };
     Kokkos::parallel_for ("Mode::calculateAtomicNeuralNetworks", s->N_local, calc_nn_op);
     Kokkos::fence();
+    double time = timer.seconds();
+    timer.reset();
+    printf("TIME CalculateANN: %f\n", time);
 }
 
 
 template<class t_neighbor, class t_neigh_parallel, class t_angle_parallel>
-void Mode::calculateForces(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list)
+void Mode::calculateForces(System *s, t_AoSoA_NNP_G aosoa_dEdG, t_neighbor neigh_list)
 {
     //Calculate Forces 
-    auto type = Cabana::slice<Types>(s->xvf);
-    auto x = Cabana::slice<Positions>(s->xvf);
-    auto f = Cabana::slice<Forces>(s->xvf);
-    typename AoSoA::member_slice_type<Forces>::atomic_access_slice f_a;
-    f_a = Cabana::slice<Forces>(s->xvf);
-    auto dEdG = Cabana::slice<NNPNames::dEdG>(nnp_data);
+    auto x = Cabana::slice<0>(s->aosoa_x);
+    auto type = Cabana::slice<0>(s->aosoa_type);
+    //auto type = s->aosoa_type; //Cabana::slice<Types>(s->xvf);
+    //auto x = s->aosoa_x; //Cabana::slice<Positions>(s->xvf);
+    //auto f = s->aosoa_f; //Cabana::slice<Forces>(s->xvf);
+    //f_a = s->aosoa_f; //Cabana::slice<Forces>(s->xvf);
+    //typename AoSoA::member_slice_type<Forces>::atomic_access_slice f_a;
+    //auto f = Cabana::slice<0>(s->aosoa_f);
+    auto f = Cabana::slice<0>(s->aosoa_f);
+    typename t_AoSoA_x::member_slice_type<0>::atomic_access_slice f_a;
+    f_a = Cabana::slice<0>(s->aosoa_f);
+    auto dEdG = Cabana::slice<0>(aosoa_dEdG);
     
     double convForce = convLength/convEnergy;
 
@@ -324,6 +345,7 @@ void Mode::calculateForces(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list)
     t_neigh_parallel neigh_op_tag;
     t_angle_parallel angle_op_tag;
 
+    Kokkos::timer timer;
     auto calc_radial_force_op = KOKKOS_LAMBDA (const int i, const int j)
     {
         int attype = type(i); 
@@ -379,6 +401,8 @@ void Mode::calculateForces(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list)
                                   neigh_op_tag,
                                   "Mode::calculateRadialForces");
     Kokkos::fence();
+    double time1 = timer.seconds();
+    timer.reset();
 
     auto calc_angular_force_op = KOKKOS_LAMBDA (const int i, const int j, const int k)
     {
@@ -516,6 +540,9 @@ void Mode::calculateForces(System *s, AoSoA_NNP nnp_data, t_neighbor neigh_list)
                                   neigh_op_tag, angle_op_tag,
                                   "Mode::calculateAngularForces");
     Kokkos::fence();
+    double time2 = timer.seconds();
+    timer.reset();
+    printf("TIME CalculateForces: %f %f\n", time1, time2);
 
     return;
 }
